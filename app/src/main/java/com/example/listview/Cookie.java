@@ -3,10 +3,10 @@ package com.example.listview;
 public class Cookie {
 
     private String name;
-    private int price;
+    private String price;
     private int imageId;
 
-    public Cookie(String name, int price, int imageId) {
+    public Cookie(String name, String price, int imageId) {
         this.name = name;
         this.price = price;
         this.imageId = imageId;
@@ -20,11 +20,11 @@ public class Cookie {
         this.name = name;
     }
 
-    public int getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

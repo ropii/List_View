@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.List;
 
@@ -22,8 +24,16 @@ public class CookieAdapter extends ArrayAdapter<Cookie> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater layoutInflater = ((Activity)context).getLayoutInflater();
-        View view = layoutInflater.inflate(R.layout.activity_main,parent,false);
+        View view = layoutInflater.inflate(R.layout.activity_lisr_view_row_layout,parent,false);
 
+        TextView tvName = view.findViewById(R.id.tvName);
+        TextView tvPrice = view.findViewById(R.id.tvPrice);
+        ImageView ivCookie=view.findViewById(R.id.ivCookie);
+        Cookie temp = objects.get(position);
+
+        ivCookie.setImageResource(temp.getImageId());
+        tvPrice.setText(String.valueOf(temp.getPrice()));
+        tvName.setText(temp.getName());
 
 
 
