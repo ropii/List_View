@@ -8,7 +8,7 @@ public class Cookie {
 
     public Cookie(String name, String price, int imageId) {
         this.name = name;
-        this.price = price;
+        this.price = price+" pts";
         this.imageId = imageId;
     }
 

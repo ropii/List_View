@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createArLs(){
-         cookiesArLs.add(new Cookie("normal","owned",R.drawable.cookie));
+         cookiesArLs.add(new Cookie("normal","5",R.drawable.cookie));
         cookiesArLs.add(new Cookie("red","10",R.drawable.red));
         cookiesArLs.add(new Cookie("black","20",R.drawable.black));
         cookiesArLs.add(new Cookie("blue","30",R.drawable.blue));
