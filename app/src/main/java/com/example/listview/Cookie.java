@@ -3,13 +3,11 @@ package com.example.listview;
 public class Cookie {
 
     private String name;
-    private int taps;
     private int price;
     private int imageId;
 
-    public Cookie(String name, int taps, int price, int imageId) {
+    public Cookie(String name, int price, int imageId) {
         this.name = name;
-        this.taps = taps;
         this.price = price;
         this.imageId = imageId;
     }
@@ -20,14 +18,6 @@ public class Cookie {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public int getTaps() {
-        return taps;
-    }
-
-    public void setTaps(int taps) {
-        this.taps = taps;
     }
 
     public int getPrice() {
