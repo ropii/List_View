@@ -8,6 +8,15 @@ public class Cookie {
 
     public Cookie(String name, String price, int imageId) {
         this.name = name;
+        if (price.equals("")){
+            this.price ="";
+
+        }
+        else if(price.equals("0")){
+            this.price ="owned";
+
+        }
+        else
         this.price = price+" pts";
         this.imageId = imageId;
     }
