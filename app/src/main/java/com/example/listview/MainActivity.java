@@ -32,12 +32,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void createArLs(){
-         cookiesArLs.add(new Cookie("normal","0",R.drawable.cookie));
-        cookiesArLs.add(new Cookie("red","10",R.drawable.red));
-        cookiesArLs.add(new Cookie("black","20",R.drawable.black));
-        cookiesArLs.add(new Cookie("blue","30",R.drawable.blue));
-        cookiesArLs.add(new Cookie("purple","40",R.drawable.purple));
-        cookiesArLs.add(new Cookie("rainbow","99999",R.drawable.colors));
+         cookiesArLs.add(new Cookie("1","0",R.drawable.cookie));
+        cookiesArLs.add(new Cookie("2","10",R.drawable.red));
+        cookiesArLs.add(new Cookie("3","20",R.drawable.black));
+        cookiesArLs.add(new Cookie("4","30",R.drawable.blue));
+        cookiesArLs.add(new Cookie("5","40",R.drawable.purple));
+        cookiesArLs.add(new Cookie("6","99999",R.drawable.colors));
 
         cookiesArLs.add(new Cookie("will be added soon","",R.drawable.error));
         cookiesArLs.add(new Cookie("will be added soon","",R.drawable.error));
